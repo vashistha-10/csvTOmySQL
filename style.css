@@ -1,0 +1,72 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+
+tr:nth-child(2n){
+    background-color:khaki;
+}
+tr:nth-child(1){
+    background-color: grey;
+    color:white;
+    font-weight: bold;
+}
+tr{
+    padding: auto;
+    height: 30px;
+    background-color:#F9F6B9;
+}
+td{
+    width: 200px;
+    border: 2px solid white;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+}
+#xl-ip{
+    color: black;
+    height: 50px;
+    width: 400px;
+    background-color: cornsilk;
+    border-radius: 10px;
+    outline: none;
+}
+#xl-ip::-webkit-file-upload-button{
+    color: red;
+    height: 50px;
+    width: 100px;
+    background-color: rgb(65, 124, 201);
+    color:white;
+    font-size: 15px;
+    border:0px;
+    cursor:pointer;
+    border-radius: 10px;
+    outline: none;
+}
+#xl-ip::-webkit-file-upload-button:hover{
+    background-color: rgb(72, 129, 209);
+}
+#men{
+    background-color: #6D71E5;
+    height:80px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menubtn{
+	background-color: #6D71E5;
+	height: 50px;
+	width: 100px;
+	color:white;
+	border: 0px;
+}
+h1{
+	font-family:arial;
+}
+#ftw{
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
