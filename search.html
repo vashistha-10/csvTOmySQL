@@ -1,0 +1,76 @@
+
+<html>
+<head>
+    <title>Excel to Table</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js" integrity="sha512-wBcFatf7yQavHQWtf4ZEjvtVz4XkYISO96hzvejfh18tn3OrJ3sPBppH0B6q/1SHB4OKHaNNUKqOmsiTGlOM/g==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">CSV Handler</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/show">Show Data</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/search"><span class="sr-only">(current)</span>Custom Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/note">Please Read</a>
+                      </li>
+                  </ul>
+                  <span class="navbar-text">
+                    Store your CSV data direct into Database
+                  </span>
+                </div>
+              </nav>
+        <center><br>
+
+            <h4>Enter Fields or leave the fields Empty if no condition</h4><br>
+            
+            <form action="/searchbyval" method="GET">
+            <input type="text"  name="name" placeholder="Search by Name..." style="
+                height: 40px !important;
+                outline: none;
+                width: 250px;
+                border: 1px solid grey;
+                border-radius: 5px;
+            ">
+            <input type="text" name="rollno" placeholder="Search by Roll No..." style="
+            height: 40px !important;
+            outline: none;
+            width: 250px;
+            border: 1px solid grey;
+            border-radius: 5px;
+        "> 
+				<input type="text" name="class" placeholder="Search by Class..." style="
+            height: 40px !important;
+            outline: none;
+            width: 250px;
+            border: 1px solid grey;
+            border-radius: 5px;
+        ">
+            <input type="submit" value="Search" style="
+            height: 40px !important;
+            outline: none;
+            width: 90px;
+            background-color: #579EE7;
+            color:white;
+            border: 1px solid #579EE7;
+            border-radius: 5px;
+        ">
+			</form></center>
+
+
+</body>
+</html>
